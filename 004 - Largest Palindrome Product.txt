@@ -24,8 +24,7 @@ function largestPalindromeProduct(n) {
 			}
 		}
 	}
-	console.log(Math.max.apply(null, productArray));
-	return Math.max.apply(null, productArray);
+	return Math.max.apply(null,productArray);
 }
 
 largestPalindromeProduct(2);
