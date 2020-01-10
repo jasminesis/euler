@@ -12,6 +12,6 @@ The problems are tackled in the [freeCodeCamp platform and editor](https://www.f
 | Number | Title                  | Solution |
 | ------ | ---------------------- | :------: |
 | 001    | Multiples of 3 and 5   |    ✔️    |
-| 002    | Even Fibonacci Numbers |         |
-| 003    | Largest prime factor   |         | 
-
+| 002    | Even Fibonacci Numbers |        ✔️  |
+| 003    | Largest prime factor   |          ✔️| 
+| 004    | Largest palindrome product | ✔️ |
