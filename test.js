@@ -1,23 +1,24 @@
-function fiboEvenSum(n) {
-	// You can do it!
-	let a = 1;
-	let b = 2;
-	let c;
+console.log('moo');
+function reverseString(str) {
+	return str.split('').reverse().join('');
+}
 
-	let counter = 0;
-	let sum = 2;
-
-	while (counter < n - 2) {
-		c = a;
-		a = b;
-		b = b + c;
-
-		if (b % 2 == 0) {
-			sum += b;
+function largestPalindromeProduct(n) {
+	let largest = '';
+	for (let i = 0; i < n; i++) {
+		largest += '9';
+	}
+	let largestNumber = parseInt(largest);
+	console.log(largestNumber);
+	let product;
+	for (let i = largestNumber; i > 0; i--) {
+		product = largestNumber * i;
+		console.log(largestNumber, i);
+		if (reverseString(product.toString()) == product) {
+			console.log('Largest!!! ', product);
+			return;
 		}
-		console.log(`a is ${a}, b is ${b}, sum is ${sum}`);
-		counter += 1;
 	}
 }
 
-fiboEvenSum(10);
+largestPalindromeProduct(3);
