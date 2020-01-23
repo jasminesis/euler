@@ -18,5 +18,3 @@ function sumSquareDifference(n) {
 	console.log(sumSquares(n) - squaredSum(n));
 	return Math.abs(sumSquares(n) - squaredSum(n));
 }
-
-sumSquareDifference(100);
