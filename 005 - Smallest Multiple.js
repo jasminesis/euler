@@ -17,3 +17,5 @@ function smallestMult(n) {
 	}
 	return maxLCM;
 }
+
+smallestMult(20);
