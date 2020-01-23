@@ -1,31 +1,46 @@
 console.log('moo');
-function reverseString(str) {
-	return str.split('').reverse().join('');
+
+function lcm(a, b) {
+	console.log('finding LCM of ', a, ' and ', b);
+	console.log('returns ', a * b);
+	return a * b / gcd(a, b);
 }
 
-function largestPalindromeProduct(n) {
-	let largest = '';
-	let smallest = '';
-	for (let i = 0; i < n; i++) {
-		largest += '9';
-		smallest += '1';
-	}
-
-	let largestNumber = parseInt(largest);
-
-	let productArray = [];
-	let product;
-
-	for (let i = largestNumber; i >= parseInt(smallest); i--) {
-		for (let j = largestNumber; j >= parseInt(smallest); j--) {
-			product = i * j;
-			if (reverseString(product.toString()) == product) {
-				productArray.push(parseInt(product));
-			}
-		}
-	}
-	console.log(Math.max.apply(null, productArray));
-	return Math.max.apply(null, productArray);
+function gcd(a, b) {
+	if (b === 0) return a;
+	return gcd(b, a % b);
 }
 
-largestPalindromeProduct(2);
+function smallestMult(n) {
+	let maxLCM = 1;
+
+	for (let i = 2; i <= n; i++) {
+		maxLCM = lcm(maxLCM, i);
+		console.log(i, n);
+		console.log(maxLCM);
+	}
+	return maxLCM;
+}
+
+// function smallestMult(n) {
+// 	console.log(n);
+// 	let number = n;
+// 	let array = [];
+// 	while (array.length != n) {
+// 		for (let i = 2; i <= n; i++) {
+// 			// console.log('in the for loop, i is ', i);
+// 			if (number % i == 0) {
+// 				array.push(number);
+// 			}
+// 		}
+// 		if (array.length == n - 1) {
+// 			console.log(number);
+// 			return number;
+// 		} else {
+// 			array = [];
+// 		}
+// 		number += n;
+// 	}
+// }
+
+smallestMult(20);
