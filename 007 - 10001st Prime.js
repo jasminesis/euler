@@ -22,7 +22,6 @@ function nthPrime(n) {
 		}
 		number += 2;
 	}
-	console.log(primes);
 	console.log(primes[n - 1]);
 	return primes[n - 1];
 }
