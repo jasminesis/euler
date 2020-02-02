@@ -5,7 +5,7 @@ Inspired by [this post](https://www.freecodecamp.org/news/developer-new-years-re
 
 The problems are tackled in the [freeCodeCamp platform and editor](https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/).
 
-(Text from borntofrappe/project-euler)
+(Text from [borntofrappe/project-euler](https://github.com/borntofrappe/project-euler))
 
 ## Problems
 
@@ -15,3 +15,7 @@ The problems are tackled in the [freeCodeCamp platform and editor](https://www.f
 | 002    | Even Fibonacci Numbers|✔️|
 | 003    | Largest prime factor|✔️| 
 | 004    | Largest palindrome product|✔️|
+| 005    | Smallest Multiple |✔️|
+| 006    | Sum Square Difference |✔️|
+| 007    | 10001st Prime |✔️|
+| 008    | Largest Product in a Series |✔️|
