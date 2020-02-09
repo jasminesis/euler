@@ -1,3 +1,5 @@
+console.log('Working');
+
 // find all prime numbers until n
 
 function isPrime(number) {
@@ -10,20 +12,19 @@ function isPrime(number) {
 	}
 	return true;
 }
+function primeSummation(n) {
+	let sum = 2;
 
-function nthPrime(n) {
-	let primes = [ 2 ];
 	let number = 3;
-	while (primes.length < n) {
-		// while (number < 50) {
+	while (number < n) {
 		if (isPrime(number)) {
-			primes.push(number);
-			console.log(number, ' is a prime');
+			console.log(number);
+			sum += number;
 		}
 		number += 2;
 	}
-	console.log(primes[n - 1]);
-	return primes[n - 1];
+	console.log(sum);
+	return sum;
 }
 
-nthPrime(104743);
+primeSummation(17);

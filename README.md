@@ -19,3 +19,5 @@ The problems are tackled in the [freeCodeCamp platform and editor](https://www.f
 | 006    | Sum Square Difference |✔️|
 | 007    | 10001st Prime |✔️|
 | 008    | Largest Product in a Series |✔️|
+| 009    | Special Pythagorean Triplet |✔️|
+| 010    | Summation of Primes |✔️|
